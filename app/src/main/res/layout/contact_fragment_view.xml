@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/edittext_back"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etCname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Your name"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#77000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:background="@drawable/edittext_back"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etCemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Email address"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#77000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:background="@drawable/edittext_back"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etCphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Phone"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#77000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:background="@drawable/edittext_back"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etCcomplain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Message"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:maxLines="5"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#77000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnSubmitComplaint"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:background="@drawable/btn_selector"
+                    android:text="SUBMIT"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

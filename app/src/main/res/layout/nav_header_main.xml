@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/splash_bg"
+    >
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scrollbarStyle="insideInset"
+        android:layout_above="@+id/bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:id="@+id/myroundimage"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:src="@drawable/drawerlogo">
+            </ImageView>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_20sdp"
+                android:id="@+id/lvSAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/aboutus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About us"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/category_textcolour"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvOurTeams"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/ourteam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Our Team"
+                    android:textColor="@color/category_textcolour"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvSOverview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+
+                <TextView
+                    android:id="@+id/services"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Services"
+                    android:textColor="@color/category_textcolour"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/lvPotfolieScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+
+                <TextView
+                    android:id="@+id/portfolio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Portfolio"
+                    android:textColor="@color/category_textcolour"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/lvChatScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Products"
+                    android:textColor="@color/category_textcolour"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvOurClients"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+
+                <TextView
+                    android:id="@+id/clients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clients"
+                    android:textColor="@color/category_textcolour"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvTestimonial"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Testimonials"
+                    android:textColor="@color/category_textcolour"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvBlogScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/blog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blog"
+                    android:textColor="@color/category_textcolour"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lvContactUsScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+
+                <TextView
+                    android:id="@+id/contactus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact us"
+                    android:textColor="@color/category_textcolour"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/lvHelpScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_13sdp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/menu_textpading"
+                    android:layout_weight="1"
+                    android:text="Help"
+                    android:textColor="@color/category_textcolour"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvRatusScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingRight="@dimen/_8sdp"
+                >
+
+
+                <TextView
+                    android:id="@+id/quote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Quote"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="@dimen/_16sdp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/bot"
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:background="#65000000"
+        android:layout_height="@dimen/_40sdp">
+
+        <RelativeLayout
+            android:id="@+id/navActionPhone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:src="@drawable/ic_nav_call"
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/navActionchat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:src="@drawable/chat"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/navActionweb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:src="@drawable/ic_nav_web"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

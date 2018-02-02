@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:text="What service do you require?"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/serviceRadioGroup"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:textSize="@dimen/_14sdp"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:theme="@style/RBT"
+            android:gravity="center|start"
+            android:text="Web Design / Development"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp" />
+
+        <RadioButton
+            android:textSize="@dimen/_14sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:theme="@style/RBT"
+            android:text="Mobile Application"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp" />
+
+        <RadioButton
+            android:textSize="@dimen/_14sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:theme="@style/RBT"
+            android:gravity="center|start"
+            android:text="Branding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp" />
+
+        <RadioButton
+            android:textSize="@dimen/_14sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:theme="@style/RBT"
+            android:gravity="center|start"
+            android:text="SEO / SMO"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp" />
+
+        <RadioButton
+            android:textSize="@dimen/_14sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:theme="@style/RBT"
+            android:gravity="center|start"
+            android:text="Other"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp" />
+
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/onemain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <RadioButton
+           android:id="@+id/one"
+           android:text="First Selection"
+           android:layout_margin="10dp"
+           android:button="@null"
+           android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+           android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/boticon"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_margin="10dp"
+            android:id="@+id/one2"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+            android:text="Second Selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/boticon"/>
+        <RadioButton
+            android:layout_margin="10dp"
+            android:id="@+id/one3"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+            android:text="Third Selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/boticon"/>
+        <RadioButton
+            android:layout_margin="10dp"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+            android:id="@+id/one4"
+            android:text="Fourth Selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/boticon"/>
+
+        <RadioButton
+            android:layout_margin="10dp"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+            android:id="@+id/one5"
+            android:text="Fifth Selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+</LinearLayout>
+</ScrollView>

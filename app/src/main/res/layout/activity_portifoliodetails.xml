@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/app_bar_layout"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="15dp"
+            app:expandedTitleMarginBottom="@dimen/_15sdp"
+            app:collapsedTitleTextAppearance="@style/toolbarTitle"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@style/toolbarTitle3"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <ImageView
+                android:id="@+id/portfolioIv"
+                android:layout_width="match_parent"
+                android:src="@drawable/banner_one"
+                android:adjustViewBounds="true"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax"
+                />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ToolbarColoredBackArrow"
+                app:contentInsetEnd="0dp"
+                app:contentInsetEndWithActions="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetRight="0dp"
+                app:layout_collapseMode="pin"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:titleTextAppearance="@style/toolbarTitle" />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/onelin"
+                android:background="#f2f2f2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="3"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/iphonebig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_weight="1"
+                    android:src="@drawable/androidbig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_weight="1"
+                    android:src="@drawable/webbig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/twolin"
+                android:padding="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:layout_below="@+id/onelin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/mainTitle"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/portfolioTv"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/slider"
+                    custom:auto_cycle="true"
+                    android:layout_below="@+id/twolin"
+                    custom:pager_animation="Default"
+                    custom:indicator_visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    />
+
+                <com.daimajia.slider.library.Indicators.PagerIndicator
+                    android:id="@+id/custom_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_below="@+id/twolin"
+                    android:gravity="center|bottom"
+                    custom:selected_color="@color/colorPrimary"
+                    android:paddingBottom="@dimen/_7sdp"
+                    custom:unselected_color="#55555555"
+                    />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/thirdlin"
+                android:layout_below="@+id/slider"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:src="@drawable/chaticon"
+                    android:layout_width="@dimen/_25sdp"
+                    android:gravity="center|start"
+                    android:layout_height="@dimen/_25sdp"
+                    android:id="@+id/imageView4" />
+
+                <TextView
+                    android:text="Let's Chat"
+                    android:gravity="center|start"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="#000000"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView4"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/namelin"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_below="@+id/thirdlin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="My name is  "
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/entName"
+                    android:text=""
+                    android:textColor="@color/textSub"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aboutlin"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_below="@+id/namelin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="I want to discuss about  "
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/entAbout"
+                    android:text=""
+                    android:textColor="@color/textSub"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_2sdp"
+                android:id="@+id/contlin"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_below="@+id/aboutlin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="You can reach me on  "
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/entCont"
+                    android:text=""
+                    android:textColor="@color/textSub"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_2sdp"
+                android:id="@+id/mainlin"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_below="@+id/contlin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="or drop a short msg at  "
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/entMail"
+                    android:text=""
+                    android:textColor="@color/textSub"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_2sdp"
+                android:id="@+id/talklin"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_below="@+id/mainlin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="I can connect between  "
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/entTalk"
+                    android:text=""
+                    android:textColor="@color/textSub"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/_2sdp"
+                android:id="@+id/lotv"
+                android:layout_below="@+id/talklin"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="local time (+5:30 GMT)"
+                android:textColor="@color/Tex"
+                android:textSize="@dimen/_14sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_below="@+id/lotv"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:id="@+id/entDesc"
+                android:text=""
+                android:textColor="@color/textSub"
+                android:textSize="@dimen/_14sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/sendBTN"
+                android:layout_below="@+id/entDesc"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_width="@dimen/_75sdp"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="SEND"
+                android:textColor="@color/White"
+                android:background="#000000"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:layout_height="@dimen/_30sdp" />
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

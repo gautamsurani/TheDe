@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:src="@drawable/drawerlogo"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:paddingBottom="@dimen/_150sdp"
+        android:id="@+id/imageView2" />
+    <!--<ImageView
+        android:id="@+id/imagelogo2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="156dp"
+        android:src="@drawable/ic_logo_new" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="14dp"
+        android:textColor="@color/red"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />-->
+
+</RelativeLayout>

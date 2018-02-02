@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/appbar"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/Tex"
+                android:text="YOUR NAME"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:hint="Your name &amp; last name"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="3dp"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/boticon"/>
+
+            <TextView
+                android:textColor="@color/Tex"
+                android:text="EMAIL ADDRESS"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:hint="Email address"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="3dp"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/boticon"/>
+
+            <TextView
+                android:textColor="@color/Tex"
+                android:text="PHONE NUMBER"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:hint="Phone number"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="3dp"
+                android:maxLines="1"
+                android:inputType="number"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/myEditText" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/boticon"/>
+
+            <TextView
+                android:textColor="@color/Tex"
+                android:text="TYPE"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#993F51B5"
+                android:text="Select Any"
+                android:id="@+id/selectionTEXT"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="1dp"
+                android:textSize="18sp"
+                android:drawableRight="@drawable/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/boticon"/>
+
+            <TextView
+                android:textColor="@color/Tex"
+                android:text="MESSAGE"
+                android:textStyle="bold"
+                android:id="@+id/msg"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:hint="Type message"
+                android:maxLines="5"
+                android:lines="5"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="3dp"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/boticon"/>
+
+            <Button
+                android:id="@+id/submitInquiry"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:textColor="@color/White"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="45dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/overviewFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/msg"
+        app:fabSize="normal"
+        android:visibility="gone"
+        app:rippleColor="@color/colorPrimary"
+        tools:ignore="RelativeOverlap" />
+</RelativeLayout>

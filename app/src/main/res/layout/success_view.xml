@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    >
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/explorer"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_10sdp">
+
+
+            <ImageView
+                android:id="@+id/img_Main"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:src="@drawable/thanks" />
+
+            <TextView
+                android:id="@+id/tvMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:textColor="@color/Tex"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/texttttView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:text="We will get back to you soon,"
+                android:textColor="@color/Tex"
+                android:textSize="@dimen/_13sdp" />
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:gravity="center"
+                android:text="For more information Please feel free"
+                android:textColor="@color/Tex"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/textVieffw8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="to contact with us"
+                android:textColor="@color/Tex"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/textVieffw9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="we will be happy to assist you :)"
+                android:textColor="@color/Tex"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <TextView
+                android:id="@+id/dashBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="#000000"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_12sdp"
+                android:paddingRight="@dimen/_12sdp"
+                android:text="Call Now!"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/explorer"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:text="Explore"
+        android:gravity="center"
+        android:textSize="@dimen/_13sdp"
+        android:padding="@dimen/_10sdp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

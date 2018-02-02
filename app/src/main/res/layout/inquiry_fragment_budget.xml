@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:text="Do you have any approximate  budget  ?"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/budgetRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:theme="@style/RBT"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Budget 5000 - 10,000"
+            android:textSize="@dimen/_14sdp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:theme="@style/RBT"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Experiance10,000 - 25,000"
+            android:textSize="@dimen/_14sdp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:theme="@style/RBT"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Premium 25,000 - 60,000"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </RadioGroup>
+</LinearLayout>

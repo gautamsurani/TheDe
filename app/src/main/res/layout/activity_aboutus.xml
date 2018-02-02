@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/app"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+</android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrolltext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app"
+        android:background="#eeeeee">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/shethinfodetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imgAboutUsbanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/tvAboutusline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/material_grey_800" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/relsocialmedia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shethinfodetail">
+
+
+                <TextView
+                    android:id="@+id/tvfollows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:text="Follow us"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_16sdp" />
+
+                <LinearLayout
+                    android:id="@+id/maincontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvfollows"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="#fff">
+
+                    <RelativeLayout
+                        android:id="@+id/sharewp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#eeeeee"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/_10sdp">
+
+                        <ImageView
+                            android:id="@+id/viewfb"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="@dimen/_14sdp"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:src="@drawable/facebook" />
+
+
+                        <ImageView
+                            android:id="@+id/viewgplus"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/viewfb"
+                            android:src="@drawable/googleplus" />
+
+                        <ImageView
+                            android:id="@+id/viewin"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/viewgplus"
+                            android:src="@drawable/in" />
+
+                        <ImageView
+                            android:id="@+id/viewinstagram"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/viewin"
+                            android:src="@drawable/instagram" />
+
+                        <ImageView
+                            android:id="@+id/viewtwitter"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/viewinstagram"
+                            android:src="@drawable/twitter" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/serviceRecycle"
+                android:visibility="gone"
+                android:background="#fff"
+                android:layout_below="@+id/relsocialmedia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/aboutFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_14sdp"
+        android:src="@drawable/msg"
+        app:fabSize="normal"
+        app:rippleColor="@color/colorPrimary" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/serviceLinear"
+    android:layout_width="match_parent"
+    android:background="@drawable/option_custom"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_margin="@dimen/_2sdp"
+        android:id="@+id/serviceIMG"
+        android:adjustViewBounds="true"
+        android:minHeight="@dimen/_110sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/serviceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:text="ik"
+
+        android:textColor="@color/Tex"
+        android:textSize="@dimen/_15sdp" />
+
+</LinearLayout>
+

@@ -1,0 +1,113 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="overlapAnchor">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/fab_color_normal</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:windowSharedElementsUseOverlay">false</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="toolbarTitle3">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="toolbarTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:typeface">serif</item>
+    </style>
+    <style name="TagGroup">
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_38sdp</item>
+        <item name="atg_isAppendMode">false</item>
+        <!--<item name="atg_inputHint">@string/add_tag</item>-->
+        <item name="atg_borderColor">#FFFFFF</item>
+        <item name="atg_textColor">#FFFFFF</item>
+        <item name="atg_backgroundColor">@android:color/transparent</item>
+        <item name="atg_dashBorderColor">#60FFFFFF</item>
+        <item name="atg_inputHintColor">#80000000</item>
+        <item name="atg_inputTextColor">#DE000000</item>
+        <item name="atg_checkedBorderColor">#49C120</item>
+        <item name="atg_checkedTextColor">#FFFFFF</item>
+        <item name="atg_checkedMarkerColor">#FFFFFF</item>
+        <item name="atg_checkedBackgroundColor">#49C120</item>
+        <item name="atg_pressedBackgroundColor">#60FFFFFF</item>
+        <item name="atg_borderStrokeWidth">0.5dp</item>
+        <item name="atg_textSize">13sp</item>
+        <item name="atg_horizontalSpacing">6dp</item>
+        <item name="atg_verticalSpacing">4dp</item>
+        <item name="atg_horizontalPadding">12dp</item>
+        <item name="atg_verticalPadding">3dp</item>
+    </style>
+
+    <style name="TagGroup.Small" parent="TagGroup">
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_height">@dimen/_27sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_1sdp</item>
+        <item name="atg_borderStrokeWidth">0.7dp</item>
+        <item name="atg_textSize">13sp</item>
+        <item name="atg_horizontalSpacing">10dp</item>
+        <item name="atg_verticalSpacing">3dp</item>
+        <item name="atg_horizontalPadding">10dp</item>
+        <item name="atg_verticalPadding">5dp</item>
+        <item name="atg_textColor">@color/Tex</item>
+        <item name="atg_borderColor">@color/grey_hard</item>
+        <item name="atg_pressedBackgroundColor">@color/grey_hard</item>
+    </style>
+
+    <style name="TagGroup.Large" parent="TagGroup">
+        <item name="android:typeface">serif</item>
+        <item name="atg_borderStrokeWidth">0.7dp</item>
+        <item name="atg_textSize">15sp</item>
+        <item name="atg_horizontalSpacing">12dp</item>
+        <item name="atg_verticalSpacing">7dp</item>
+        <item name="atg_horizontalPadding">15dp</item>
+        <item name="atg_verticalPadding">7dp</item>
+    </style>
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/black</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@android:color/black</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="RBT" parent="AppTheme">
+        <item name="android:typeface">serif</item>
+        <item name="colorControlActivated">@color/fab_color_normal</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+    </style>
+
+
+</resources>

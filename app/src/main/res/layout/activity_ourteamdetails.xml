@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <thedezine.android.utils.MyRoundImageview
+                    android:layout_width="160dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/man_default"
+                    android:layout_height="160dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="25sp"
+                    android:layout_marginTop="15dp"
+                    android:text="Senior Developer"
+                    android:textColor="@color/material_grey_800" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:layout_marginTop="7dp"
+                    android:text="Senior Developer"
+                    android:textColor="@color/material_grey_800" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="@dimen/spacing_medium"
+                    app:cardElevation="6dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="10"
+
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ADDRESS"
+                                android:textStyle="bold"
+                                android:textColor="@color/material_grey_800"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="     (no data available)"
+                                android:textColor="@color/material_grey_800"
+                                android:layout_marginTop="10dp"
+                                />
+                            <View
+                                android:layout_marginTop="5dp"
+                                android:background="@color/divider"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"></View>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="10"
+
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PHONE NUMBERS"
+                                android:textStyle="bold"
+                                android:textColor="@color/material_grey_800"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10"
+                                android:padding="4dp"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="8"
+
+                                    android:gravity="center_vertical"
+                                    android:layout_height="match_parent"
+                                    android:text="     (no data available)"
+                                    android:textColor="@color/material_grey_800"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/productdetailprice"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:text="CALL"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/White"
+                                    android:background="@drawable/oneside_roundrect"
+                                    android:paddingBottom="6dp"
+                                    android:paddingTop="6dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingLeft="10dp"
+                                    />
+
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10"
+                                android:padding="4dp"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="8"
+                                    android:gravity="center_vertical"
+                                    android:layout_height="match_parent"
+                                    android:text="     +12655417777"
+                                    android:textColor="@color/material_grey_800"
+                                    />
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:text="CALL"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/White"
+                                    android:background="@drawable/oneside_roundrect"
+                                    android:paddingBottom="6dp"
+                                    android:paddingTop="6dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingLeft="10dp"
+                                    />
+
+
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_marginTop="5dp"
+                                android:background="@color/divider"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"></View>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="10"
+
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="FAX"
+                                android:textStyle="bold"
+                                android:textColor="@color/material_grey_800"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+                                android:text="     (no data available)"
+                                android:textColor="@color/material_grey_800"
+                                android:layout_marginTop="10dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="     +12345678900"
+                                android:textColor="@color/material_grey_800"
+                                android:layout_marginTop="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="     +12345633900"
+                                android:textColor="@color/material_grey_800"
+                                android:layout_marginTop="5dp"
+                                />
+
+                            <View
+                                android:layout_marginTop="5dp"
+                                android:background="@color/divider"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"></View>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
